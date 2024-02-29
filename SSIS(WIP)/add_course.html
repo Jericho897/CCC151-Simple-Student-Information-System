@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Course</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Title Bar -->
+    <div class="title-bar">
+        <h1>Simple Student Information System</h1>
+    </div>
+    <!-- Side Navigation Bar -->
+    <div class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="add_course.html">Add Course</a>
+        <a href="add_student.html">Add Student</a>
+        <a href="student_table.html">Student Table</a>
+        <a href="course_table.html">Course Table</a>
+    </div>
+
+    <!-- Toggle button for side navigation -->
+    <div class="menu-toggle" onclick="toggleNav()">
+        <img src="menu_icon.png" alt="Menu">
+    </div>
+
+    <!-- Add Course Form Will be Loaded Here -->
+    <div class="main">
+        <h2>Add Course</h2>
+        <form id="addCourseForm" action="http://127.0.0.1:5050/add_course" method="POST">
+            <label for="courseCode">Course Code:</label>
+            <select id="courseCode" name="courseCode" required>
+                <option value="" disabled selected>Select Course Code</option>
+                <option value="BSCE">BSCE</option>
+                <option value="BSCER">BSCER</option>
+                <option value="BSCH">BSCH</option>
+                <option value="BSCOMP">BSCOMP</option>
+                <option value="BSECE">BSECE</option>
+                <option value="BSEE">BSEE</option>
+                <option value="BSME">BSME</option>
+                <option value="BSMIN">BSMIN</option>
+                <option value="BSEET">BSEET</option>
+                <option value="BSMBT">BSMBT</option>
+                <option value="BSB">BSB</option>
+                <option value="BSCH">BSCH</option>
+                <option value="BSM">BSM</option>
+                <option value="BSP">BSP</option>
+                <option value="BSZ">BSZ</option>
+                <option value="BSBM">BSBM</option>
+                <option value="BSBG">BSBG</option>
+                <option value="BSS">BSCS</option>
+                <option value="BSTT">BSTT</option>
+                <option value="BSTD">BSTD</option>
+                <option value="BSBAE">BSBAE</option>
+                <option value="BSBA">BSBA</option>
+                <option value="BSBAM">BSBAM</option>
+                <option value="BSHRM">BSHRM</option>
+                <option value="BSA">BSA</option>
+                <option value="BSIS">BSIS</option>
+                <option value="BSIT">BSIT</option>
+                <option value="BSCS">BSCS</option>
+                <option value="BSECTE">BSECTE</option>
+                <option value="BSECCT">BSECCT</option>
+                <!-- Add other course code options here -->
+            </select><br><br>
+            
+            <label for="courseName">Course Name:</label>
+            <select id="courseName" name="courseName" required>
+                <option value="">Select Course Name</option>
+                <option value="BACHELOR OF SCIENCE IN CIVIL ENGINEERING">BACHELOR OF SCIENCE IN CIVIL ENGINEERING</option>
+                <option value="BACHELOR OF SCIENCE IN CERAMICS ENGINEERING">BACHELOR OF SCIENCE IN CERAMICS ENGINEERING</option>
+                <option value="BACHELOR OF SCIENCE IN CHEMICAL ENGINEERING">BACHELOR OF SCIENCE IN CHEMICAL ENGINEERING</option>
+                <option value="BACHELOR OF SCIENCE IN COMPUTER ENGINEERING">BACHELOR OF SCIENCE IN COMPUTER ENGINEERING</option>
+                <option value="BACHELOR OF SCIENCE IN ELECTRONICS & COMMUNICATIONS ENGINEERING">BACHELOR OF SCIENCE IN ELECTRONICS & COMMUNICATIONS ENGINEERING</option>
+                <option value="BACHELOR OF SCIENCE IN ELECTRICAL ENGINEERING">BACHELOR OF SCIENCE IN ELECTRICAL ENGINEERING</option>
+                <option value="BACHELOR OF SCIENCE IN MINING ENG'G">BACHELOR OF SCIENCE IN MINING ENG'G</option>
+                <option value="BACHELOR OF SCIENCE IN ENVIRONMENTAL ENGINEERING TECHNOLOGY">BACHELOR OF SCIENCE IN ENVIRONMENTAL ENGINEERING TECHNOLOGY</option>
+                <option value="BACHELOR OF SCIENCE IN MECHANICAL ENGINEERING">BACHELOR OF SCIENCE IN MECHANICAL ENGINEERING</option>
+                <option value="BACHELOR OF SCIENCE METALLURGICAL ENGINEERING">BACHELOR OF SCIENCE METALLURGICAL ENGINEERING</option>
+                <option value="BACHELOR OF SCIENCE IN BIOLOGY (BOTANY)">BACHELOR OF SCIENCE IN BIOLOGY (BOTANY)</option>
+                <option value="BACHELOR OF SCIENCE IN CHEMISTRY">BACHELOR OF SCIENCE IN CHEMISTRY</option>
+                <option value="BACHELOR OF SCIENCE IN MATHEMATICS">BACHELOR OF SCIENCE IN MATHEMATICS</option>
+                <option value="BACHELOR OF SCIENCE IN PHYSICS">BACHELOR OF SCIENCE IN PHYSICS</option>
+                <option value="BACHELOR OF SCIENCE IN BIOLOGY (ZOOLOGY)">BACHELOR OF SCIENCE IN BIOLOGY (ZOOLOGY)</option>
+                <option value="BACHELOR OF SCIENCE IN BIOLOGY (MARINE)">BACHELOR OF SCIENCE IN BIOLOGY (MARINE)</option>
+                <option value="BACHELOR OF SCIENCE IN BIOLOGY (GENERAL)">BACHELOR OF SCIENCE IN BIOLOGY (GENERAL)</option>
+                <option value="BACHELOR OF SCIENCE IN STATISTICS">BACHELOR OF SCIENCE IN STATISTICS</option>
+                <option value="BACHELOR OF SCIENCE IN TECHNOLOGY TEACHER EDUCATION (INDUSTRIAL TECH)">BACHELOR OF SCIENCE IN TECHNOLOGY TEACHER EDUCATION (INDUSTRIAL TECH)</option>
+                <option value="BACHELOR OF SCIENCE IN TECHNOLOGY TEACHER EDUCATION (DRAFTING TECH)">BACHELOR OF SCIENCE IN TECHNOLOGY TEACHER EDUCATION (DRAFTING TECH)</option>
+                <option value="BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION (BUSINESS ECONOMICS)">BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION (BUSINESS ECONOMICS)</option>
+                <option value="BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION (ECONOMICS)">BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION (ECONOMICS)</option>
+                <option value="BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION (ENTREPRENEURIAL MARKETING)">BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION (ENTREPRENEURIAL MARKETING)</option>
+                <option value="BACHELOR OF SCIENCE IN HOTEL AND RESTAURANT MANAGEMENT">BACHELOR OF SCIENCE IN HOTEL AND RESTAURANT MANAGEMENT</option>
+                <option value="BACHELOR OF SCIENCE IN ACCOUNTANCY">BACHELOR OF SCIENCE IN ACCOUNTANCY</option>
+                <option value="BACHELOR OF SCIENCE IN INFORMATION SYSTEMS">BACHELOR OF SCIENCE IN INFORMATION SYSTEMS</option>
+                <option value="BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY">BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</option>
+                <option value="BACHELOR OF SCIENCE IN COMPUTER SCIENCE">BACHELOR OF SCIENCE IN COMPUTER SCIENCE</option>
+                <option value="BACHELOR OF SCIENCE IN ELECTRONICS AND COMPUTER TECHNOLOGY (EMBEDDED SYSTEMS)">BACHELOR OF SCIENCE IN ELECTRONICS AND COMPUTER TECHNOLOGY (EMBEDDED SYSTEMS)</option>
+                <option value="BACHELOR OF SCIENCE IN ELECTRONICS AND COMPUTER TECHNOLOGY (COMMUNICATIONS SYSTEM)">BACHELOR OF SCIENCE IN ELECTRONICS AND COMPUTER TECHNOLOGY (COMMUNICATIONS SYSTEM)</option>
+            </select><br><br>
+            
+            <label for="college">College:</label>
+            <select id="college" name="college" required>
+                <option value="" disabled selected>Select College</option>
+                <option value="College of Engineering and Technology">College of Engineering(COE)</option>
+                <option value="College of Science and Mathematics">College of Science and Mathematics(CSM)</option>
+                <option value="College of Computer Studies">College of Computer Studies(CCS)</option>
+                <option value="College of Education">College of Education(CED)</option>
+                <option value="College of Arts and Science">College of Arts and Social Science(CASS)</option>
+                <option value="College of Business Administration & Accountancy">College of Economics, Business, and Accountancy(ABM)</option>
+                <option value="College of Nursing">College of Health Sciences(CHS)</option>
+                <!-- Add other college options here -->
+            </select><br><br>
+            <div>
+                <button type="submit">Add Course</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

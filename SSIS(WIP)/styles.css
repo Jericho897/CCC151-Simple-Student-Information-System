@@ -1,0 +1,150 @@
+/* Title Bar Styling */
+.title-bar {
+    background-color: #800000; /* Maroon background color */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #6b0000;
+}
+
+.title-bar h1 {
+    margin: 0;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Side Navigation Bar styles */
+.sidenav {
+    height: 100%;
+    margin-top: 22px;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 39px; /* Adjusted top margin */
+    left: 0;
+    background-color: maroon;
+    padding-top: 20px;
+    border-right: 3px solid #6b0000;
+}
+
+.sidenav a {
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.sidenav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.main {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Toggle button styles */
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 768px) {
+    .sidenav {
+        width: 60px;
+    }
+
+    .sidenav a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .main {
+        margin-left: 60px;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+        cursor: pointer;
+    }
+}
+
+/* Form styles */
+form {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid maroon; /* Add a border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include border and padding in the width */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background: linear-gradient(to right, maroon, #800000); /* Gradient background */
+    color: white;
+    cursor: pointer;
+    border: none; /* Remove default button border */
+    transition: background 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background: linear-gradient(to right, #6b0000, rgb(78, 0, 0)); /* Darker gradient color on hover */
+}
+
+/* Add your styling for tables here */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* White background */
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid #800000; /* Maroon border */
+    padding: 8px;
+}
+
+.data-table th {
+    background-color: #800000; /* Maroon background for table header */
+    color: #fff; /* White text color */
+}
