@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 100vh;
+    background-image: url('https://in-net.ph/img/msu-iit-campus.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.title-box {
+    background: linear-gradient(to bottom, #800000, #4c0000); 
+    color: #ffffff; 
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.title-box h1 {
+    margin: 0;
+}
+.box {
+    position: relative; /* Ensure the container has a relative position */
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    margin-right: 10px;
+}
+
+.input-preview-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-preview-container img {
+    margin-left: 1px;
+    max-width: 200px;
+    max-height: 200px;
+}
+.preview-box {
+    border: 5px solid #800000;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.preview-inner {
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.preview-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.input-preview-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-preview-container .preview-box {
+    margin-left: 250px; /* Adjust the margin as needed */
+}
+
+.input-preview-container .preview-inner {
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.input-preview-container .preview-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.filter-toggle {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#filter-button {
+    padding: 10px 20px;
+    background-color: #4c0000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#filter-button:hover {
+    background-color: #3a0101;
+}
+
+/* CSS for Filter Box */
+#filter-box {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#filter-box.show {
+    display: block;
+}
+
+#apply-filter-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4c0000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#apply-filter-button:hover {
+    background-color: #3a0101;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.left, .right {
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='range'] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to bottom, #800000, #4c0000);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #570101, #3a0101);
+}
+
+.deleteButton {
+    text-align: center;
+}
+
+i {
+    margin: 5px 7px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#yesBtn:hover {
+    color: red;
+}
+
+#noBtn:hover {
+    color: green;
+}

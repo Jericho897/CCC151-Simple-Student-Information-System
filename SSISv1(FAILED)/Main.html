@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Student Information System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title-box">
+        <h1>Simple Student Information System</h1>
+    </div>
+    <div class="box">
+        <h2>Student Registration</h2>
+        <form id="record-form">
+            <div class="input-container"> 
+                <label for="picture">Input Student Picture:</label>
+                <div class="input-preview-container">
+                    <input type="file" id="picture" accept="image/*" onchange="previewPicture(event)">
+                    <div id="picture-preview" class="preview-box" style="display: none;">
+                        <div class="preview-inner">
+                            <img id="preview" src="" alt="Preview">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="id" placeholder="ID" required>
+            <input type="text" id="yearlevel" placeholder="Year Level" required>
+            <input type="text" id="gender" placeholder="Gender" required>
+            <input type="text" id="coursecode" placeholder="Course Code" required>
+            <input type="text" id="course" placeholder="Course" required>
+            <button type="submit">Add Record</button>
+            <input type="hidden" id="edit-index" value="-1">
+        </form>
+    </div>    
+    <div class="box">
+        <h2>Student Records</h2>
+        <div class="filter-toggle">
+            <button id="filter-toggle-button">Toggle Filter</button>
+        </div>
+        <div id="filter-box" class="filter-box">
+            <input type="text" id="nameFilter" class="filter-input" placeholder="Filter by Name...">
+            <input type="text" id="idFilter" class="filter-input" placeholder="Filter by ID...">
+            <input type="text" id="yearlevelFilter" class="filter-input" placeholder="Filter by Year Level...">
+            <input type="text" id="genderFilter" class="filter-input" placeholder="Filter by Gender...">
+            <input type="text" id="coursecodeFilter" class="filter-input" placeholder="Filter by Course Code...">
+            <input type="text" id="courseFilter" class="filter-input" placeholder="Filter by Course...">
+            <button id="apply-filter-button">Apply Filters</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Year Level</th>
+                    <th>Gender</th>
+                    <th>Course Code</th>
+                    <th>Course</th>
+                    <th>Picture</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="record-list"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

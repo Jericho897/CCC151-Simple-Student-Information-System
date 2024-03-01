@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Title Bar -->
+    <div class="title-bar">
+        <h1>Simple Student Information System</h1>
+    </div>
+    <!-- Side Navigation Bar -->
+    <div class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="add_course.html">Add Course</a>
+        <a href="add_student.html">Add Student</a>
+        <a href="student_table.html">Student Table</a>
+        <a href="course_table.html">Course Table</a>
+    </div>
+
+    <!-- Toggle button for side navigation -->
+    <div class="menu-toggle" onclick="toggleNav()">
+        <img src="menu_icon.png" alt="Menu">
+    </div>
+   <!-- Add Student Form Will be Loaded Here -->
+   <div class="main">
+    <h2>Add Student</h2>
+    <form id="addStudentForm" action="http://127.0.0.1:5050/add_student" method="POST">
+        <label for="studentID">ID Number:</label>
+        <input type="text" id="studentID" name="studentID" required><br>
+        
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        
+        <label for="year">Year:</label>
+        <select id="year" name="year" required>
+            <option value="">Select Year</option>
+            <option value="first">First Year</option>
+            <option value="second">Second Year</option>
+            <option value="third">Third Year</option>
+            <option value="fourth">Fourth Year</option>
+        </select><br><br>
+        
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="">Select Course</option>
+            <option value="BACHELOR OF SCIENCE IN CIVIL ENGINEERING">BACHELOR OF SCIENCE IN CIVIL ENGINEERING</option>
+            <option value="BACHELOR OF SCIENCE IN CERAMICS ENGINEERING">BACHELOR OF SCIENCE IN CERAMICS ENGINEERING</option>
+            <option value="BACHELOR OF SCIENCE IN CHEMICAL ENGINEERING">BACHELOR OF SCIENCE IN CHEMICAL ENGINEERING</option>
+            <option value="BACHELOR OF SCIENCE IN COMPUTER ENGINEERING">BACHELOR OF SCIENCE IN COMPUTER ENGINEERING</option>
+            <option value="BACHELOR OF SCIENCE IN ELECTRONICS & COMMUNICATIONS ENGINEERING">BACHELOR OF SCIENCE IN ELECTRONICS & COMMUNICATIONS ENGINEERING</option>
+            <option value="BACHELOR OF SCIENCE IN ELECTRICAL ENGINEERING">BACHELOR OF SCIENCE IN ELECTRICAL ENGINEERING</option>
+            <option value="BACHELOR OF SCIENCE IN MINING ENG'G">BACHELOR OF SCIENCE IN MINING ENG'G</option>
+            <option value="BACHELOR OF SCIENCE IN ENVIRONMENTAL ENGINEERING TECHNOLOGY">BACHELOR OF SCIENCE IN ENVIRONMENTAL ENGINEERING TECHNOLOGY</option>
+            <option value="BACHELOR OF SCIENCE IN MECHANICAL ENGINEERING">BACHELOR OF SCIENCE IN MECHANICAL ENGINEERING</option>
+            <option value="BACHELOR OF SCIENCE METALLURGICAL ENGINEERING">BACHELOR OF SCIENCE METALLURGICAL ENGINEERING</option>
+            <option value="BACHELOR OF SCIENCE IN BIOLOGY (BOTANY)">BACHELOR OF SCIENCE IN BIOLOGY (BOTANY)</option>
+            <option value="BACHELOR OF SCIENCE IN CHEMISTRY">BACHELOR OF SCIENCE IN CHEMISTRY</option>
+            <option value="BACHELOR OF SCIENCE IN MATHEMATICS">BACHELOR OF SCIENCE IN MATHEMATICS</option>
+            <option value="BACHELOR OF SCIENCE IN PHYSICS">BACHELOR OF SCIENCE IN PHYSICS</option>
+            <option value="BACHELOR OF SCIENCE IN BIOLOGY (ZOOLOGY)">BACHELOR OF SCIENCE IN BIOLOGY (ZOOLOGY)</option>
+            <option value="BACHELOR OF SCIENCE IN BIOLOGY (MARINE)">BACHELOR OF SCIENCE IN BIOLOGY (MARINE)</option>
+            <option value="BACHELOR OF SCIENCE IN BIOLOGY (GENERAL)">BACHELOR OF SCIENCE IN BIOLOGY (GENERAL)</option>
+            <option value="BACHELOR OF SCIENCE IN STATISTICS">BACHELOR OF SCIENCE IN STATISTICS</option>
+            <option value="BACHELOR OF SCIENCE IN TECHNOLOGY TEACHER EDUCATION (INDUSTRIAL TECH)">BACHELOR OF SCIENCE IN TECHNOLOGY TEACHER EDUCATION (INDUSTRIAL TECH)</option>
+            <option value="BACHELOR OF SCIENCE IN TECHNOLOGY TEACHER EDUCATION (DRAFTING TECH)">BACHELOR OF SCIENCE IN TECHNOLOGY TEACHER EDUCATION (DRAFTING TECH)</option>
+            <option value="BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION (BUSINESS ECONOMICS)">BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION (BUSINESS ECONOMICS)</option>
+            <option value="BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION (ECONOMICS)">BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION (ECONOMICS)</option>
+            <option value="BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION (ENTREPRENEURIAL MARKETING)">BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION (ENTREPRENEURIAL MARKETING)</option>
+            <option value="BACHELOR OF SCIENCE IN HOTEL AND RESTAURANT MANAGEMENT">BACHELOR OF SCIENCE IN HOTEL AND RESTAURANT MANAGEMENT</option>
+            <option value="BACHELOR OF SCIENCE IN ACCOUNTANCY">BACHELOR OF SCIENCE IN ACCOUNTANCY</option>
+            <option value="BACHELOR OF SCIENCE IN INFORMATION SYSTEMS">BACHELOR OF SCIENCE IN INFORMATION SYSTEMS</option>
+            <option value="BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY">BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</option>
+            <option value="BACHELOR OF SCIENCE IN COMPUTER SCIENCE">BACHELOR OF SCIENCE IN COMPUTER SCIENCE</option>
+            <option value="BACHELOR OF SCIENCE IN ELECTRONICS AND COMPUTER TECHNOLOGY (EMBEDDED SYSTEMS)">BACHELOR OF SCIENCE IN ELECTRONICS AND COMPUTER TECHNOLOGY (EMBEDDED SYSTEMS)</option>
+            <option value="BACHELOR OF SCIENCE IN ELECTRONICS AND COMPUTER TECHNOLOGY (COMMUNICATIONS SYSTEM)">BACHELOR OF SCIENCE IN ELECTRONICS AND COMPUTER TECHNOLOGY (COMMUNICATIONS SYSTEM)</option>
+        </select><br><br>
+        <div>
+            <button type="submit">Add Student</button>
+        </div>
+    </form>
+</div>
+<!-- Modal for Editing Student -->
+<div id="editStudentModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeEditStudentModal()">&times;</span>
+        <h2>Edit Student</h2>
+        <form id="editStudentForm">
+            <input type="hidden" id="editStudentID">
+            <label for="editFirstName">First Name:</label>
+            <input type="text" id="editFirstName" required>
+            <label for="editLastName">Last Name:</label>
+            <input type="text" id="editLastName" required>
+            <label for="editGender">Gender:</label>
+            <input type="text" id="editGender" required>
+            <label for="editYear">Year:</label>
+            <input type="text" id="editYear" required>
+            <label for="editCourse">Course:</label>
+            <input type="text" id="editCourse" required>
+            <button type="button" onclick="updateStudent()">Update</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
