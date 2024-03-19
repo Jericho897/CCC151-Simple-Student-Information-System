@@ -1,3 +1,4 @@
+Name,ID,Gender,Year Level,Course Code
 Franz jericho Nastor,2021-2166,Male,Third Year,BS-CS
 Sarah Smith,2019-5678,Female,Fourth Year,BS-COMPE
 John Doe,2020-1234,Male,First Year,BS-CHEM
@@ -11,8 +12,8 @@ Maria Hernandez,2020-3456,Female,Fourth Year,BS-CHEMENG
 Daniel Gonzalez,2021-6789,Male,First Year,BS-CE
 Ashley Wilson,2022-8901,Female,Third Year,BS-BIOZOOL
 James Anderson,2023-4567,Male,Second Year,BS-IT
-Kimberly Taylor,2024-7654,Female,Fourth Year,BS-INDUSTED-DRAFT
-Matthew Thomas,2018-2190,Male,First Year,BS-IS
+Kimberly Taylor,2024-7654,Other,Fourth Year,BS-INDUSTED-DRAFT
+Matthew Thomas,2018-2190,Other,First Year,BS-IS
 Amanda Moore,2019-7089,Female,Third Year,BS-ENVENTECH
 Robert Jackson,2020-2134,Male,Second Year,BS-BUSECON
 Nicole White,2021-5609,Female,Fourth Year,BS-HRM
@@ -25,7 +26,7 @@ Brittany Martinez,2020-6543,Female,Third Year,BS-HIS
 Andrew Hernandez,2021-8901,Male,Second Year,BS-PHYS
 Ashley Smith,2022-4567,Female,Fourth Year,BS-METENG
 Christopher Johnson,2023-1234,Male,First Year,BS-ME
-Stephanie Davis,2024-7089,Female,Third Year,BS-CERENG
+Stephanie Davis,2024-7089,Other,Third Year,BS-CERENG
 Jacob Martinez,2018-4567,Male,Second Year,BS-ENG
 Megan Wilson,2019-7890,Female,Fourth Year,BS-PSY
 Ryan Anderson,2020-9876,Male,First Year,BS-BIO
@@ -40,7 +41,7 @@ Kevin Thompson,2021-7654,Male,First Year,BS-BIO
 Brittany Garcia,2022-8901,Female,Third Year,BS-BUSECON
 Eric Rodriguez,2023-2134,Male,Second Year,BS-ECON
 Heather Martinez,2024-9876,Female,Fourth Year,BS-STAT
-Brandon Hernandez,2018-4567,Male,First Year,BS-HIS
+Brandon Hernandez,2018-4567,Other,First Year,BS-HIS
 Amanda Smith,2019-7890,Female,Third Year,BS-MAPEH
 Justin Johnson,2020-2190,Male,Second Year,BS-BIOZOOL
 Melissa Davis,2021-7089,Female,Fourth Year,BS-BIOMAR
@@ -49,9 +50,9 @@ Kayla Wilson,2023-8888,Female,Third Year,BS-CE
 Benjamin Anderson,2024-1123,Male,Second Year,BS-CHEMENG
 Emily Taylor,2018-5432,Female,Fourth Year,BS-CERENG
 Patrick Thomas,2019-1234,Male,First Year,BS-CS
-Chelsea Moore,2020-7654,Female,Third Year,BS-COMPE
+Chelsea Moore,2020-7654,Other,Third Year,BS-COMPE
 Gregory Jackson,2021-5432,Male,Second Year,BS-EE
-Samantha White,2022-8901,Female,Fourth Year,BS-ECE
+Samantha White,2022-8901,Other,Fourth Year,BS-ECE
 Nathan Harris,2023-7089,Male,First Year,BS-ETM
 Christina Martin,2024-2190,Female,Third Year,BS-INDUSTED-DRAFT
 Austin Thompson,2018-4567,Male,Second Year,BS-IS
@@ -80,8 +81,8 @@ Brandon Hernandez,2018-4567,Male,First Year,BS-HIS
 Amanda Smith,2019-7890,Female,Third Year,BS-MAPEH
 Justin Johnson,2020-2190,Male,Second Year,BS-BIOZOOL
 Melissa Davis,2021-7089,Female,Fourth Year,BS-BIOMAR
-Timothy Martinez,2022-5609,Male,First Year,BS-BIOBOT
-Kayla Wilson,2023-8888,Female,Third Year,BS-CE
+Timothy Martinez,2022-5609,Other,First Year,BS-BIOBOT
+Kayla Wilson,2023-8888,Other,Third Year,BS-CE
 Benjamin Anderson,2024-1123,Male,Second Year,BS-CHEMENG
 Emily Taylor,2018-5432,Female,Fourth Year,BS-CERENG
 Patrick Thomas,2019-1234,Male,First Year,BS-CS
@@ -97,4 +98,4 @@ Tiffany Hernandez,2021-5432,Female,Third Year,BS-MATH
 Philip Taylor,2021-7890,Male,First Year,BS-BIO
 Brittany Thomas,2022-5432,Female,Third Year,BS-BUSECON
 Jesse Moore,2023-8901,Male,Second Year,BS-CS
-Monica Jackson,2024-9876,Female,Fourth Year,BS-COMPE
+Monica Jackson,2024-9876,Other,Fourth Year,BS-COMPE
